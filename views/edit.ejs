@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Staff Member</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Edit Staff Member</h1>
+        </header>
+
+        <section class="edit-staff-section">
+            <form action="/edit/<%= staff._id %>?_method=PUT" method="POST">
+                <input type="text" name="name" value="<%= staff.name %>" required>
+                <input type="text" name="position" value="<%= staff.position %>" required>
+                <input type="email" name="email" value="<%= staff.email %>" required>
+                
+                <!-- Added salary input field -->
+                <input type="number" name="salary" value="<%= staff.salary %>" required placeholder="Enter Salary">
+
+                <button type="submit">Update Staff</button>
+            </form>
+        </section>
+    </div>
+    <center><a href="/logout" class="logout-button">Logout</a> </center>
+</body>
+</html>
+

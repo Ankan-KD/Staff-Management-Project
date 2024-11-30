@@ -1,0 +1,293 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(#ff9a9e, #fad0c4, #fad0c4, #fbc2eb);
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #36d1dc, #5b86e5);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffecb3;
+}
+
+/* Search Box */
+#search-box {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+/* Staff List Section */
+.staff-list-section h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#staff-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#staff-table th, #staff-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#staff-table th {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+#staff-table td {
+    background-color: #f9f9f9;
+}
+
+#staff-table td:hover {
+    background-color: #ffddc1;
+    color: #333;
+}
+
+.edit-btn, .delete-btn {
+    padding: 10px 15px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-btn {
+    background-color: #4caf50;
+    font-size: 1em;
+    display: inline-block;
+}
+
+.delete-btn {
+    background-color: #ff4b5c;
+    font-size: 1em;
+}
+
+.edit-btn:hover {
+    background-color: #388e3c;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Add Staff Section */
+.add-staff-section h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.add-staff-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.add-staff-section input, .add-staff-section button {
+    margin: 10px 0;
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-staff-section input {
+    background: #e0f7fa;
+}
+
+.add-staff-section button {
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-staff-section button:hover {
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 30px;
+    border-radius: 15px;
+    font-size: 1.1em;
+}
+
+/* Fancy Icons */
+button::before {
+    content: '';
+    display: inline-block;
+    background: url('https://cdn-icons-png.flaticon.com/512/3039/3039461.png') no-repeat center;
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.delete-btn::before {
+    content: '';
+    display: inline-block;
+    background: url('https://cdn-icons-png.flaticon.com/512/1828/1828843.png') no-repeat center;
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+/* Edit Staff Section */
+.edit-staff-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.edit-staff-section form {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 60%;
+}
+
+.edit-staff-section input {
+    margin: 15px 0;
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #e0f7fa;
+}
+
+.edit-staff-section button {
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.edit-staff-section button:hover {
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+}
+
+/* Header Styling for Edit Page */
+header {
+    background: linear-gradient(90deg, #36d1dc, #5b86e5);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.edit-staff-section input[name="salary"] {
+    background: #fff7e0; /* Optional background color */
+}
+
+
+.logout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
